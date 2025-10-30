@@ -12,9 +12,10 @@ main {
     rgba(37, 117, 252, 1) 0%,
     rgba(106, 17, 203, 1) 68%
   );
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-content: space-around;
+  justify-items: center;
   padding-top: 100px;
   h1 {
     font-size: 5rem;
@@ -105,5 +106,6 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
