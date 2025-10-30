@@ -1,0 +1,107 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--branco);
+}
+
+#main1 {
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    265deg,
+    rgba(37, 117, 252, 1) 0%,
+    rgba(106, 17, 203, 1) 68%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 100px;
+  h1 {
+    font-size: 5rem;
+    color: var(--branco);
+    text-transform: uppercase;
+  }
+}
+
+#main2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  div {
+    margin-top: 80px;
+  }
+}
+
+#hero-img {
+  width: 300px;
+  height: 300px;
+  background-image: url(img.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#main-title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3rem;
+  color: var(--preto);
+  span {
+    color: var(--roxo);
+  }
+}
+
+#main-desc {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--preto);
+  opacity: 0.5;
+  margin-top: 30px;
+}
+
+.btns {
+  background-color: var(--azul);
+  padding: 15px;
+  font-size: 3rem;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.btns:hover {
+  letter-spacing: 4px;
+  box-shadow: 0px 0px 20px var(--azul);
+}
+
+#type {
+  color: var(--branco);
+  font-weight: 600;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+  font-weight: 600;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

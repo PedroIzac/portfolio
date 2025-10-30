@@ -1,0 +1,15 @@
+body {
+  --azul: #2575FC;
+  --roxo: #6A11CB;
+  --amarelo: #FFCC00;
+  --branco: #dfdfdf;
+  --preto: #131313;
+}
+
+body.dark {
+  --azul: #6A11CB;
+  --roxo: #2575FC;
+  --amarelo: #FFCC00;
+  --branco: #131313;
+  --preto: #dfdfdf;
+}

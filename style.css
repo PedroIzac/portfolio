@@ -1,0 +1,12 @@
+@import url("./styles/global.css");
+@import url("./styles/pages/header.css");
+@import url("./styles/pages/main.css");
+@import url("./styles/pages/sobre.css");
+@import url("./styles/pages/habilidades.css");
+@import url("./styles/pages/projetos.css");
+@import url("./styles/pages/contato.css");
+@import url("./styles/responsividade/r-header.css");
+@import url("./styles/responsividade/r-main.css");
+@import url("./styles/responsividade/r-contact.css");
+@import url("./styles/utilities/color.css");
+

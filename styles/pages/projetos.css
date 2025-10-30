@@ -1,0 +1,50 @@
+#projects {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.projeto {
+  height: auto;
+  width: max-content;
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#top {
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    i {
+      margin-right: 15px;
+    }
+  }
+  a:hover {
+    transform: scale(1.2);
+  }
+}
+
+#github {
+  a {
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    i {
+      margin-right: 15px;
+    }
+  }
+  a:hover {
+    transform: scale(1.2);
+  }
+}

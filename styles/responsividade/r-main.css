@@ -1,0 +1,27 @@
+@media (max-width: 1054px) {
+  #main1 {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  #habilidades {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 700px) {
+  #main1 {
+    flex-direction: column;
+  }
+  .btns  {
+    font-size: 1rem;
+  }
+  #main-title {
+    font-size: 1.7rem;
+  }
+
+  #main-desc {
+    font-size: 1.5rem;
+  }
+
+}

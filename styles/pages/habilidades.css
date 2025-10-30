@@ -1,0 +1,75 @@
+#habilidades {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skill-container {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 400px;
+  height: 150px;
+  border: 3px solid var(--azul);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 15px 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
+  h1 {
+    font-size: 1.5rem;
+    color: var(--azul);
+    margin-bottom: 15px;
+    transition: 0.5s ease;
+  }
+  p {
+    font-size: 1rem;
+    color: var(--preto);
+    opacity: 0.5;
+    font-weight: bold;
+    transition: 0.5s ease;
+  }
+}
+
+.cards::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  background-color: var(--azul);
+  border-radius: 15px;
+  left: 3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+
+.cards:hover {
+  background-color: var(--azul);
+  border: 2px solid var(--amarelo);
+  box-shadow: 0px 0px 20px var(--azul);
+  transform: translateY(-10px);
+  h1 {
+    color: var(--branco);
+  }
+  p {
+    color: var(--branco);
+  }
+}
+
+.cards:hover::after {
+  background-color: var(--branco);
+}

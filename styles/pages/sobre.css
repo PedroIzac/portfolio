@@ -1,0 +1,159 @@
+#sobre {
+  height: 100vh;
+  background-color: var(--branco);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+}
+
+#sobremim {
+  padding-left: 50px;
+  h1 {
+    width: max-content;
+    font-size: 5rem;
+    color: var(--preto);
+    opacity: 0.2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+  p {
+    width: 80%;
+    text-align: left;
+    font-size: 1.625rem;
+    color: var(--preto);
+  }
+}
+
+#formacao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#formacaoh1 {
+  font-size: 3rem;
+  color: var(--preto);
+  opacity: 0.2;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#card1 {
+  background-color: var(--branco);
+  width: 400px;
+  height: 150px;
+  padding: 0px 30px;
+  border-radius: 15px;
+  display: flex;
+  border: 2px solid var(--azul);
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  p {
+    color: var(--preto);
+    opacity: 0.5;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--azul);
+    margin-top: 10px;
+  }
+  h1 {
+    color: var(--preto);
+    font-size: 1.7rem;
+  }
+}
+
+#card1:hover {
+  box-shadow: 0px 0px 20px var(--azul);
+  transform: translateY(-10px);
+}
+
+#card2 {
+  background-color: var(--branco);
+  width: 400px;
+  height: 150px;
+  padding: 0px 30px;
+  border-radius: 15px;
+  display: flex;
+  border: 2px solid var(--roxo);
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  p {
+    color: var(--preto);
+    opacity: 0.5;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--roxo);
+    margin-top: 10px;
+  }
+  h1 {
+    color: var(--preto);
+    font-size: 1.7rem;
+  }
+}
+
+#card2:hover {
+  box-shadow: 0px 0px 20px var(--roxo);
+  transform: translateY(-10px);
+}
+
+dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border: var(--azul);
+  border-radius: 15px;
+  background-color: var(--branco);
+  border: 2px solid var(--azul);
+  transition: 0.5s ease;
+  h1 {
+    color: var(--preto);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+  p {
+    color: var(--preto);
+    margin-bottom: 15px;
+  }
+  a {
+    color: var(--preto);
+    opacity: 0.5;
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(5px);
+}
+
+#fechar {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}

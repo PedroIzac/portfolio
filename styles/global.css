@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: .5s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--branco);
+}
